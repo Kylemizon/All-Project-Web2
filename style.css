@@ -1,0 +1,108 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+            background-color: rgb(24, 134, 139);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        section {
+            background-color: rgb(17, 17, 61);
+            color: beige;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        h3, label {
+            margin-top: 10px;
+            display: block;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 10px;
+            width: 60px;
+        }
+         button[type="submit"] {
+            background-color: rgb(17, 17, 61);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto 0;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+         button[type="submit"]:hover {
+            background-color: rgb(34, 34, 100);
+        }
+
+         @media screen and (max-width: 768px) {
+            form {
+                padding: 20px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            form {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h3, label {
+                font-size: 14px;
+            }
+
+            input[type="text"],
+            input[type="date"],
+            input[type="email"] {
+                font-size: 14px;
+            }
+        }
